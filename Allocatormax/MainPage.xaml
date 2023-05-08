@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="First Page"
+             x:Class="Allocatormax.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="30" x:Name="vStack">
+            <Label Text="Let's test the Admob Banner 1!" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            <Label x:Name="myLabel" Text="Click the botton to load interstitial ads, if the ads do not show after some seconds, press the button again to show the ads" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Button Text="Show Interstitial 1" Clicked="ShowInterstitial_OnClicked"
+                    BackgroundColor="Blue" TextColor="White"/>
+
+            <Button Text="Next Page" Clicked="NextPage" 
+                    BackgroundColor="DarkGreen" TextColor="White"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
